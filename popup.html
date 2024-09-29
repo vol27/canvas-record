@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Recorder</title>
+    <style>
+        body {
+            min-width: 200px;
+            background: #151542;
+       }
+        
+        .wrapper{
+            position: relative;
+            width: max-content;
+            margin: 0 auto;
+        }
+
+
+          #canvasSelector{
+            height: 22px;
+            color:#151542
+          }  
+
+        .cd-title{
+            color: #fff;
+            font-weight: bold;
+        }
+
+        #lamp{
+
+            border-radius: 50px;
+            width: 20px;
+            height: 20px;
+            background-color: #151542;
+            position: absolute;
+            top: 0;
+            right: 0;
+       }
+
+
+       .block-btn{
+        display: flex;
+        margin-top: 5px;
+        justify-content: center;
+
+       }
+
+        .btn-dg{
+            margin-top: 5px;
+            margin-left:4px;
+            border: none;
+        
+            padding: 4xp;
+            background-color:#151542;;
+            color: #fff;
+            font-weight: bold;
+            border:1px solid #fff;
+            border-radius:10px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <h3 class="cd-title">DG</h3>
+
+    <div>
+        <div id="lamp"></div>
+    </div>
+   
+    <input type="text" id="canvasSelector" placeholder="Enter canvas selector" />
+    <div  class="block-btn">
+    <input id="startBtn" type="button" value="Start Record" class="btn-dg" />
+    </div>
+    <script src="popup.js"></script>
+    </div>
+</body>
+</html>
